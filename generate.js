@@ -1,3 +1,14 @@
+const generateTags = (tags) => {
+  let html = ''
+  tags.forEach(t => {
+    html += `
+      <span>${t}</span>
+    `
+  })
+
+  return html
+}
+
 const generate = (posts) => {
   let html = ''
   posts.forEach(data => {
@@ -5,8 +16,7 @@ const generate = (posts) => {
       <div class="post-card">
         <div>
           <div class="tags">
-            <span>CSS</span>
-            <span>JS</span>
+            ${generateTags(data.meta.tags)}
           </div>
           <div class="date">2/10/22</div>
         </div>

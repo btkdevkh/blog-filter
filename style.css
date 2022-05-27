@@ -152,9 +152,6 @@ small {
   border-radius: 50%;
 }
 
-.post-content-body {
-}
-
 .skeleton {
   border-radius: 5px;
   animation: 650ms linear infinite alternate skeleton-loading;
